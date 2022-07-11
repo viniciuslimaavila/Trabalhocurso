@@ -26,7 +26,7 @@
             <section class="columns-3">
 <article>
     <label for="name"> Digite o nome do produto:</label>
-    <input type="text" id="name" name="name"class="border border-blue-400"placeholder = "Digite aqui...">
+    <input type="text" id="name" name="name" class="border border-blue-400"placeholder = "Digite aqui">
 </article>
 <article>
 <label for="price" >Preço de venda:</label>
@@ -34,7 +34,7 @@
 </article>
 <article>
 <label for="quantity" >Quantidade em estoque:</label>
-<input type="number" id="quantity" name="quantity" class="border border-blue-400" min=1 max=100>
+<input type="number" id="quantity" name="quantity" class="border border-blue-400" min=1 max=100 placeholder = "Número]">
 </article>
             </section>
             <article class="flex justify-center mt-4">
@@ -45,3 +45,4 @@
     </main>
 </body>
 </html>
+

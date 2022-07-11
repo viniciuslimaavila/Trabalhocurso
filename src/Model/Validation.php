@@ -4,13 +4,28 @@ namespace APP\Model;
 
 class Validation
 {
-    public static function validateName($name):bool
+    public static function validateName($name): bool
     {
-       return mb_strlen($name) > 4;
+        return mb_strlen($name) > 4;
     }
-
-    public static function validateNumber(float $number):bool
+    public static function validateNumber(float $number): bool
     {
-         return $number > 0;
+        return $number > 0;
+    }
+    public static function validateEmail(string $email): bool
+    {
+        return filter_var($email, FILTER_VALIDATE_EMAIL);
+    } 
+    public static function validateContato(string $Contato): bool
+    {
+        return $Contato == 9;
+    } 
+    public static function validateCNPJ(string $CNPJ): bool
+    {
+        return $CNPJ == 9;
+    }
+    public static function validateNome(string $nome): bool
+    {
+        return mb_strlen($name) > 4;
     }
 }
